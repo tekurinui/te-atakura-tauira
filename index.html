@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<title>Te Atakura App</title>
+<style type="text/css">
+body {
+    background-image: url('http://www.teatakura2015.co.nz/wp-content/uploads/2015/06/Te-Atakura-sunrise.jpg');
+    background-repeat: no-repeat;
+    font-family: Helvetica;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 200%;
+}
+
+#mainContent {
+    background-color: gray;
+    background-color: rgba(80, 80, 80, .5);
+    width: 60%;
+    margin: 0 auto;
+    height: 400px;
+}
+
+input {
+    width: 50%;
+}
+
+iframe {
+  border: 0;
+}
+</style>
+</head>
+
+<body>
+    <h1>Te Atakura</h1>
+    <div id="mainContent">
+        <input type="text" value="#teatakura" onChange='document.getElementById("target").src = "http://te-atakura-tauira2.tekurinui.c9users.io/search?q=" + this.value.replace("#", "%23");'/>
+        <iframe id='target' src="http://te-atakura-tauira2.tekurinui.c9users.io/search?q=%23teatakura" width="100%" height="300px"></iframe>
+        <br/>
+    </div>
+</body>
+</html>
